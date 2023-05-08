@@ -20,5 +20,7 @@ from pybo import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('pybo/', include('pybo.urls')),
-    path('answer/create/<int:question_id>/', views.answer_create, name='answer_create')
+    path('answer/create/<int:question_id>/', views.answer_create, name='answer_create'),
+    path('common/', include('common.urls')),
+    path('', views.index, name='index')
 ]
