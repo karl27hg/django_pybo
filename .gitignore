@@ -1,2 +1,4 @@
 __pycache__/
 mysite.cmd
+.idea
+*.pyc
